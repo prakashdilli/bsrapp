@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>bsr</title>
+    <link rel='stylesheet' href="../assests/css/bootstrap.min.css" type="text/css" />
+    <link rel='stylesheet' href="../assests/css/style.css" type="text/css" />
+    <link rel='stylesheet' href="../assests/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">BSR Rank</label>
+            <input type="number" class="form-control" id="bsrRank">
+        </div>
+        <div class="radio">
+            <label for="radio">Book Type</label>
+            <label>
+                <input type="radio" name="radio" id="radio" value="ebook">eBook
+            </label>
+            <label>
+                <input type="radio" name="radio" id="radio" value="book">Book
+            </label>
+        </div>
+        <div class="form-group">
+            <h3>salesPerMonth</h3>
+            <h5 id="salesPerMonth"></h5>
+        </div>
+        <div class="form-group">
+            <h3>oneDaySales</h3>
+            <h5 id="oneDaySales"></h5>
+        </div>
+        <button type="button" class="btn btn-primary" id="submit">Submit</button>
+        <button type="button" class="btn btn-danger" id="reset">Reset</button>
+    </form>
+    <!-- <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

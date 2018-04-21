@@ -1,0 +1,18 @@
+{
+  "name": "bsr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-linux": "electron-packager . bsrapp --overwrite --asar=true --platform=linux --arch=x64 --icon=assests/img/amazon.png --prune=true --out=release-builds",
+    "package-win": "electron-packager . bsrapp --overwrite --asar=true --platform=win32 --arch=x64 --icon=assests/img/amazon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"bsrapp\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-packager": "^12.0.1"
+  }
+}
